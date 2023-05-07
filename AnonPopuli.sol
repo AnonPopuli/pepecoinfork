@@ -580,21 +580,21 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
 }
 
 
-// File contracts/PepeToken.sol
+// File contracts/AnonPopuli.sol
 
 
 
 pragma solidity ^0.8.0;
 
 
-contract PepeJunior is Ownable, ERC20 {
+contract VoxPopuli is Ownable, ERC20 {
     bool public limited;
     uint256 public maxHoldingAmount;
     uint256 public minHoldingAmount;
     address public uniswapV2Pair;
     mapping(address => bool) public blacklists;
 
-    constructor(uint256 _totalSupply) ERC20("Pepe Junior", "PEPE") {
+    constructor(uint256 _totalSupply) ERC20("Vox Populi", "ANON") {
         _mint(msg.sender, _totalSupply);
     }
 
